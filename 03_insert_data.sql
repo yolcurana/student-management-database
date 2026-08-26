@@ -6,18 +6,27 @@ VALUES
 ('Economics'),
 ('Mechanical Engineering');
 
-INSERT INTO courses (course_name, department_id)
-VALUES 
-('Database Systems', 1)
-('Programming Fundamentals', 1),
-('Business Analysis Fundamentals', 2)
-('Requremints Analysis', 2),
-('Introduction to Psychology', 3)
-('Social Psychology', 3),
-('Microeconomics', 4)
-('Macroeconomics', 4),
-('Thermodynamics', 5)
-('Machine Design', 5);
+INSERT INTO instructors
+(first_name, last_name, email, department_id)
+VALUES
+('Ahmet', 'Yilmaz', 'ahmet.yilmaz@example.com', 1),
+('Burak', 'Sahin', 'burak.sahin@example.com', 2),
+('Kerem', 'Eren', 'kerem.eren@example.com', 3),
+('Hakan', 'Oz', 'hakan.oz@example.com', 4),
+('Furkan', 'Soylu', 'furkan.soylu@example.com', 5);
+
+INSERT INTO courses (course_name, department_id, instructor_id)
+VALUES
+('Database Systems', 1, 1),
+('Programming Fundamentals', 1, 1),
+('Business Analysis Fundamentals', 2, 2),
+('Requirements Analysis', 2, 2),
+('Introduction to Psychology', 3, 3),
+('Social Psychology', 3, 3),
+('Microeconomics', 4, 4),
+('Macroeconomics', 4, 4),
+('Thermodynamics', 5, 5),
+('Machine Design', 5, 5);
 
 INSERT INTO students
 (first_name, last_name, email, birth_date, department_id, class_year, registration_date)
@@ -56,15 +65,6 @@ VALUES
 ('Asli', 'Tekin', 'asli.tekin@example.com', '2003-09-04', 5, 2, '2023-09-15'),
 ('Kaan', 'Er', 'kaan.er@example.com', '2001-11-15', 5, 4, '2021-09-20'),
 ('Pelin', 'Soylu', 'pelin.soylu@example.com', '2004-08-20', 5, 1, '2024-09-16');
-
-INSERT INTO instructors 
-(first_name, last_name, email, department_id)
-VALUES
-('Ahmet', 'Yilmaz', 'ahmet.yilmaz@example.com', 1),
-('Burak' 'Sahin', 'burak.sahin@example.com', 2),
-('Kerem', 'Eren', 'kerem.eren@example.com', 3),
-('Hakan', 'Oz', 'hakan.oz@example.com', 4), 
-('Furkan', 'Soylu', 'furkan.soylu@example.com', 5);
 
 INSERT INTO enrollments
 (student_id, course_id)
