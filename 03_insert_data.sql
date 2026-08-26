@@ -57,4 +57,25 @@ VALUES
 ('Kaan', 'Er', 'kaan.er@example.com', '2001-11-15', 5, 4, '2021-09-20'),
 ('Pelin', 'Soylu', 'pelin.soylu@example.com', '2004-08-20', 5, 1, '2024-09-16');
 
+INSERT INTO instructors 
+(first_name, last_name, email, department_id)
+VALUES
+('Ahmet', 'Yilmaz', 'ahmet.yilmaz@example.com', 1),
+('Burak' 'Sahin', 'burak.sahin@example.com', 2),
+('Kerem', 'Eren', 'kerem.eren@example.com', 3),
+('Hakan', 'Oz', 'hakan.oz@example.com', 4), 
+('Furkan', 'Soylu', 'furkan.soylu@example.com', 5);
 
+INSERT INTO enrollments
+(student_id, course_id)
+VALUES
+(8, 1),
+(8, 2),
+(9, 1),
+(9, 3),
+(10, 2),
+(10, 4),
+(11, 1),
+(11, 5),
+(12, 3),
+(12, 5);

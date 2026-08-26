@@ -17,3 +17,12 @@ FROM students;
 SELECT student_id, firs_name, last_name, class_year
 FROM students
 WHERE department_id = 1;
+
+SELECT*FROM instructors;
+
+SELECT*FROM courses;
+
+SELECT*FROM enrollments;
+
+SELECT enrollment-id, student_id, course_id, enrollment_date
+FROM enrollments;

@@ -19,11 +19,11 @@ SET class_year = 2
 WHERE student_id = 5;
 
 UPDATE students 
-SET email = burak.new@example.com
+SET email = 'burak.new@example.com'
 WHERE student_id = 6;
 
 UPDATE students 
-SET email = selin.new@example.com
+SET email = 'selin.new@example.com'
 WHERE student_id = 7;
 
 DELETE FROM students 
@@ -31,3 +31,7 @@ WHERE student_id = 30;
 
 ALTER TABLE students 
 ADD COLUMN phone_number VARCHAR(20);
+
+ALTER TABLE students
+ADD CONSTRAIN check_class_year
+CHECK (class_year BETWEEN 1 AND 4);
