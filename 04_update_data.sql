@@ -20,11 +20,11 @@ WHERE student_id = 5;
 
 UPDATE students 
 SET email = 'burak.new@example.com'
-WHERE student_id = 6;
+WHERE student_id = 7;
 
 UPDATE students 
 SET email = 'selin.new@example.com'
-WHERE student_id = 7;
+WHERE student_id = 8;
 
 DELETE FROM students 
 WHERE student_id = 30;

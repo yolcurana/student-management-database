@@ -8,15 +8,15 @@ VALUES
 
 INSERT INTO courses (course_name, department_id)
 VALUES 
-('Database Systems', 1)
+('Database Systems', 1),
 ('Programming Fundamentals', 1),
-('Business Analysis Fundamentals', 2)
-('Requrements Analysis', 2),
-('Introduction to Psychology', 3)
+('Business Analysis Fundamentals', 2),
+('Requirements Analysis', 2),
+('Introduction to Psychology', 3),
 ('Social Psychology', 3),
-('Microeconomics', 4)
+('Microeconomics', 4),
 ('Macroeconomics', 4),
-('Thermodynamics', 5)
+('Thermodynamics', 5),
 ('Machine Design', 5);
 
 INSERT INTO students
