@@ -33,5 +33,5 @@ ALTER TABLE students
 ADD COLUMN phone_number VARCHAR(20);
 
 ALTER TABLE students
-ADD CONSTRAIN check_class_year
+ADD CONSTRAINT check_class_year
 CHECK (class_year BETWEEN 1 AND 4);
